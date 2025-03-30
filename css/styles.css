@@ -1,0 +1,100 @@
+/* Pallette
+Reds
+#CA5346
+#A05A52
+#F4402D
+
+Browns
+#F4402D
+#4B403F
+#4B403F
+
+Whites
+#F5E9DA
+
+
+From Google Fonts:
+.jacquard-12-regular {
+  font-family: "Jacquard 12", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pixelify-sans-<uniquifier> {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+*/
+
+* {
+    background-color: #332928;
+    color: #F4402D;
+    color: #F5E9DA;
+}
+
+header {
+    font-family: "Jacquard 12", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 75px;
+    font-weight: normal;
+}
+
+main, footer {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: .25em;
+}
+
+.copyright-symbol {
+    font-family: sans-serif;
+}
+
+
+.profile-pic {
+    width: 3em;
+    height: 3em;
+}
+
+/*tablet query*/
+@media only screen and (min-width: 768px) {
+
+    footer {
+        flex-direction: row;
+        margin-top: 1.25em;
+        /* font-size: .9em; */
+    }
+
+    .profile-pic {
+        width: 3.5em;
+        height: 3.5em;
+    }
+}
+
+/*desktop query*/
+@media only screen and (min-width: 992px) {
+    /* footer {
+        font-size: 1em;
+    } */
+
+    .profile-pic {
+        width: 3.75em;
+        height: 3.75em;
+    }
+}
