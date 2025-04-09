@@ -46,6 +46,26 @@ h1 {
     font-weight: normal;
 }
 
+#character-area {
+display: flex;
+gap: 1em;
+width: fit-content;
+padding: 5px 10px 5px 10px;
+border: solid 3px;
+border-radius: 5px;
+justify-content: space-between;
+}
+
+h3 {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    padding: 0 0 0 25px;
+    margin: 0;
+}
+
 main, footer {
     font-family: "Pixelify Sans", sans-serif;
     font-optical-sizing: auto;
