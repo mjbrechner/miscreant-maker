@@ -46,17 +46,24 @@ h1 {
     font-weight: normal;
 }
 
-#character-area {
-display: flex;
-gap: 1em;
-width: fit-content;
-padding: 5px 10px 5px 10px;
-border: solid 3px;
-border-radius: 5px;
-justify-content: space-between;
+.character-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 10px; */
+    width: fit-content;
+    padding: 5px 10px 5px 10px;
+    border: solid 3px;
+    border-radius: 5px;
+    justify-content: space-between;
 }
 
-h3 {
+.character-area-detail {
+    display: flex;
+    gap: 1em;
+}
+
+h2, h3 {
     padding: 0;
     margin: 0;
 }
@@ -66,7 +73,8 @@ ul {
     margin: 0;
 }
 
-main, footer {
+main,
+footer {
     font-family: "Pixelify Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
