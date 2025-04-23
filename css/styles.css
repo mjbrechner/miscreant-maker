@@ -7,7 +7,6 @@ Reds
 Browns
 #F4402D
 #4B403F
-#4B403F
 
 Whites
 #F5E9DA
@@ -41,6 +40,14 @@ header {
     font-style: normal;
 }
 
+main,
+footer {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
 h1 {
     font-size: 75px;
     font-weight: normal;
@@ -63,9 +70,14 @@ h1 {
     gap: 1em;
 }
 
-h2, h3 {
+h2,
+h3 {
     padding: 0;
     margin: 0;
+}
+
+.traits-heading {
+    margin-bottom: 10px;
 }
 
 ul {
@@ -73,14 +85,20 @@ ul {
     margin: 0;
 }
 
-main,
-footer {
-    font-family: "Pixelify Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+button {
+    width: 100px;
+    height: 30px;
+    margin: 10px;
+    border: solid 3px #F5E9DA;
+    border-radius: 5px;
+    box-shadow: 2px 2px #4B403F;
+    cursor: pointer;
 }
 
+button:active {
+    box-shadow: 2px 2px;
+    transform: translate(1px);
+}
 
 footer {
     display: flex;
