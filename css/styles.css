@@ -49,8 +49,13 @@ footer {
 }
 
 h1 {
-    font-size: 75px;
+    font-size: 85px;
     font-weight: normal;
+    text-align: center;
+    padding: 5px;
+    margin: 0;
+    text-decoration: underline 3px;
+    text-underline-offset: 10px;
 }
 
 .character-maker {
