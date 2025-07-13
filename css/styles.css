@@ -68,8 +68,7 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* gap: 10px; */
-    width: fit-content;
+    width: 275px;
     padding: 5px 10px 5px 10px;
     border: solid 3px;
     border-radius: 5px;
@@ -79,6 +78,10 @@ h1 {
 .character-area-detail {
     display: flex;
     gap: 1em;
+}
+
+.trait {
+    width: 75px;
 }
 
 h2,

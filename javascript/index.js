@@ -11,16 +11,16 @@ let indexToDelete;
 // This doesn't mean that all these traits have an equal chance of being selected; evil options will predominate,
 // with a smaller chance of a neutral trait appearing and much smaller - but still possible - chance of a good trait being applied.
 
-const personalityEvilFullList = ['angry', 'malicious', 'boastful', 'loud', 'deceitful', 'sinister', 'brutal', 'soulless'];
-const personalityNeutralFullList = ['nervous', 'quick-witted', 'comical', 'goofy', 'cheerful', 'eager'];
-const personalityGoodFullList = ['friendly', 'empathetic'];
+const personalityEvilFullList = ['angry', 'malicious', 'boastful', 'loud', 'deceitful', 'sinister', 'brutal', 'soulless', 'cunning', 'traitorous'];
+const personalityNeutralFullList = ['nervous', 'quick-witted', 'comical', 'goofy', 'cheerful', 'eager', 'dutiful', 'thorough', 'flighty'];
+const personalityGoodFullList = ['friendly', 'empathetic', 'conscientious', 'merciful', 'supportive'];
 
 
 function generateTraits() {
 
-    let personalityEvil = ['angry', 'malicious', 'boastful', 'loud', 'deceitful', 'sinister', 'brutal', 'soulless'];
-    let personalityNeutral = ['nervous', 'quick-witted', 'comical', 'goofy', 'cheerful', 'eager'];
-    let personalityGood = ['friendly', 'empathetic'];
+    let personalityEvil = ['angry', 'malicious', 'boastful', 'loud', 'deceitful', 'sinister', 'brutal', 'soulless', 'cunning', 'traitorous'];
+    let personalityNeutral = ['nervous', 'quick-witted', 'comical', 'goofy', 'cheerful', 'eager', 'dutiful', 'thorough', 'flighty'];
+    let personalityGood = ['friendly', 'empathetic', 'conscientious', 'merciful', 'supportive'];
 
     for (let i = 0; i <= 2; i++) {
         console.log("i= " + i);
