@@ -84,11 +84,50 @@ function generateTraits() {
         console.log("pers evil" + personalityEvil);
 
         if (i === 0) {
-        document.getElementById("personality-trait-1").innerText = personalityTrait1;
+            document.getElementById("personality-trait-1").innerText = personalityTrait1;
         } else if (i === 1) {
             document.getElementById("personality-trait-2").innerText = personalityTrait1;
         } else if (i === 2) {
             document.getElementById("personality-trait-3").innerText = personalityTrait1;
         }
     }
+
+    // PHYSICAL TRAITS
+    // This set of traits are divided into separate groups in order that conficting traits (such as "tall" and "short") will not be picked simultanously.
+    // The plan is to generate three unique traits at a time, though there are more than three sets of traits from which to draw.
+    // Therefore, the first step is to randomly choose three different sets of physical traits, and from there randomly pick a trait from each set.
+
+    let physicial1 = ['gigantic', 'tall', 'medium', 'short', 'tiny'];
+    let physicial2 = ['brawny', 'wiry', 'scrawny', 'plump', 'medium', 'heavy', 'delicate'];
+    let physicial3 = ['wide-eyed', 'wild-eyed', 'squinty', 'sleepy-eyed', 'blinky', 'red-eyed'];
+    let physicial4 = ['fleet-footed', 'plodding', 'clumsy', 'twinkle-toed', 'jumpy', 'sure-footed'];
+    let physicial5 = ['slimy', 'crusty', 'sunburned', 'sweaty', 'foul-smelling', 'perfumed', 'unwashed', 'clean'];
+
+    // Randomly pick three sets of physical traits.
+    let ChosenTrait1 = (Math.floor(Math.random() * 5)) + 1; // Pick Physical Trait Set 1
+    console.log("chosen1: " + ChosenTrait1);
+
+    let ChosenTrait2 = (Math.floor(Math.random() * 5)) + 1; // Pick Physical Trait Set 2
+    console.log("chosen2: " + ChosenTrait2);
+    while (ChosenTrait2 === ChosenTrait1) { // Make sure Physical Trait Set 2 doesn't match Physical Trait Set 1
+        ChosenTrait2 = (Math.floor(Math.random() * 5)) + 1;
+        console.log("chosen2 while: " + ChosenTrait2);
+    }
+    console.log("chosen2: " + ChosenTrait2);
+
+    let ChosenTrait3 = (Math.floor(Math.random() * 5)) + 1; // Pick Physical Trait Set 2
+    console.log("chosen3: " + ChosenTrait3);
+    while ((ChosenTrait3 === ChosenTrait1) || (ChosenTrait3 === ChosenTrait2)) { // Make sure Physical Trait Set 3 desn't match Physical Trait Set 1 or 2
+        ChosenTrait3 = (Math.floor(Math.random() * 5)) + 1;
+        console.log("chosen3 while: " + ChosenTrait3);
+    }
+    console.log("chosen3: " + ChosenTrait3);
+    console.log("___");
+    console.log("chosen totals: " + ChosenTrait1 + ", " + ChosenTrait2 + ", " + ChosenTrait3);
+
+    // Now that three unique sets have been chosen, now to randomly pick a trait from each set.
+
+    // for (let i = 0; i <= 2; i++) {
+    //     console.log("i= " + i);
+    // }
 }
