@@ -97,37 +97,60 @@ function generateTraits() {
     // The plan is to generate three unique traits at a time, though there are more than three sets of traits from which to draw.
     // Therefore, the first step is to randomly choose three different sets of physical traits, and from there randomly pick a trait from each set.
 
-    let physicial1 = ['gigantic', 'tall', 'medium', 'short', 'tiny'];
-    let physicial2 = ['brawny', 'wiry', 'scrawny', 'plump', 'medium', 'heavy', 'delicate'];
-    let physicial3 = ['wide-eyed', 'wild-eyed', 'squinty', 'sleepy-eyed', 'blinky', 'red-eyed'];
-    let physicial4 = ['fleet-footed', 'plodding', 'clumsy', 'twinkle-toed', 'jumpy', 'sure-footed'];
-    let physicial5 = ['slimy', 'crusty', 'sunburned', 'sweaty', 'foul-smelling', 'perfumed', 'unwashed', 'clean'];
+    let physical1 = ['gigantic', 'tall', 'medium', 'short', 'tiny'];
+    let physical2 = ['brawny', 'wiry', 'scrawny', 'plump', 'medium', 'heavy', 'delicate'];
+    let physical3 = ['wide-eyed', 'wild-eyed', 'squinty', 'sleepy-eyed', 'blinky', 'red-eyed'];
+    let physical4 = ['fleet-footed', 'plodding', 'clumsy', 'twinkle-toed', 'jumpy', 'sure-footed'];
+    let physical5 = ['slimy', 'crusty', 'sunburned', 'sweaty', 'foul-smelling', 'perfumed', 'unwashed', 'clean'];
 
     // Randomly pick three sets of physical traits.
-    let ChosenTrait1 = (Math.floor(Math.random() * 5)) + 1; // Pick Physical Trait Set 1
-    console.log("chosen1: " + ChosenTrait1);
+    let ChosenTraitSet1 = (Math.floor(Math.random() * 5)) + 1; // Pick Physical Trait Set 1
+    console.log("chosen1: " + ChosenTraitSet1);
 
-    let ChosenTrait2 = (Math.floor(Math.random() * 5)) + 1; // Pick Physical Trait Set 2
-    console.log("chosen2: " + ChosenTrait2);
-    while (ChosenTrait2 === ChosenTrait1) { // Make sure Physical Trait Set 2 doesn't match Physical Trait Set 1
-        ChosenTrait2 = (Math.floor(Math.random() * 5)) + 1;
-        console.log("chosen2 while: " + ChosenTrait2);
+    let ChosenTraitSet2 = (Math.floor(Math.random() * 5)) + 1; // Pick Physical Trait Set 2
+    console.log("chosen2: " + ChosenTraitSet2);
+    while (ChosenTraitSet2 === ChosenTraitSet1) { // Make sure Physical Trait Set 2 doesn't match Physical Trait Set 1
+        ChosenTraitSet2 = (Math.floor(Math.random() * 5)) + 1;
+        console.log("chosen2 while: " + ChosenTraitSet2);
     }
-    console.log("chosen2: " + ChosenTrait2);
+    console.log("chosen2: " + ChosenTraitSet2);
 
-    let ChosenTrait3 = (Math.floor(Math.random() * 5)) + 1; // Pick Physical Trait Set 2
-    console.log("chosen3: " + ChosenTrait3);
-    while ((ChosenTrait3 === ChosenTrait1) || (ChosenTrait3 === ChosenTrait2)) { // Make sure Physical Trait Set 3 desn't match Physical Trait Set 1 or 2
-        ChosenTrait3 = (Math.floor(Math.random() * 5)) + 1;
-        console.log("chosen3 while: " + ChosenTrait3);
+    let ChosenTraitSet3 = (Math.floor(Math.random() * 5)) + 1; // Pick Physical Trait Set 2
+    console.log("chosen3: " + ChosenTraitSet3);
+    while ((ChosenTraitSet3 === ChosenTraitSet1) || (ChosenTraitSet3 === ChosenTraitSet2)) { // Make sure Physical Trait Set 3 desn't match Physical Trait Set 1 or 2
+        ChosenTraitSet3 = (Math.floor(Math.random() * 5)) + 1;
+        console.log("chosen3 while: " + ChosenTraitSet3);
     }
-    console.log("chosen3: " + ChosenTrait3);
+    console.log("chosen3: " + ChosenTraitSet3);
     console.log("___");
-    console.log("chosen totals: " + ChosenTrait1 + ", " + ChosenTrait2 + ", " + ChosenTrait3);
+    console.log("chosen totals: " + ChosenTraitSet1 + ", " + ChosenTraitSet2 + ", " + ChosenTraitSet3);
 
-    // Now that three unique sets have been chosen, now to randomly pick a trait from each set.
+    // Now that three unique sets have been chosen from the options for physical traits, now to randomly pick a trait from each set.
 
-    // for (let i = 0; i <= 2; i++) {
-    //     console.log("i= " + i);
-    // }
+
+    let ChosenTrait1 = (Math.floor(Math.random() * physical1.length))
+    console.log("ChosenTrait1 is now #" + ChosenTrait1 + "from this array: " + physical1);
+    ChosenTrait1 = physical1[ChosenTrait1];
+    console.log("ChosenTrait1 is now a value: " + ChosenTrait1);
+
+    let ChosenTrait2 = (Math.floor(Math.random() * physical2.length))
+    console.log("ChosenTrait2 is now #" + ChosenTrait2 + "from this array: " + physical2);
+    ChosenTrait2 = physical2[ChosenTrait2];
+    console.log("ChosenTrait2 is now a value: " + ChosenTrait2);
+
+    let ChosenTrait3 = (Math.floor(Math.random() * physical3.length))
+    console.log("ChosenTrait3 is now #" + ChosenTrait3 + "from this array: " + physical3);
+    ChosenTrait3 = physical3[ChosenTrait3];
+    console.log("ChosenTrait3 is now a value: " + ChosenTrait3);
+
+    let ChosenTrait4 = (Math.floor(Math.random() * physical4.length))
+    console.log("ChosenTrait4 is now #" + ChosenTrait4 + "from this array: " + physical4);
+    ChosenTrait4 = physical4[ChosenTrait4];
+    console.log("ChosenTrait4 is now a value: " + ChosenTrait4);
+
+    let ChosenTrait5 = (Math.floor(Math.random() * physical5.length))
+    console.log("ChosenTrait5 is now #" + ChosenTrait5 + "from this array: " + physical5);
+    ChosenTrait5 = physical5[ChosenTrait5];
+    console.log("ChosenTrait5 is now a value: " + ChosenTrait5);
+
 }
