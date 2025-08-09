@@ -153,4 +153,45 @@ function generateTraits() {
     ChosenTrait5 = physical5[ChosenTrait5];
     console.log("ChosenTrait5 is now a value: " + ChosenTrait5);
 
+
+    // Now there are three unique SETS and a unique TRAIT for each set. Now to match a ChosenTraitSet to the ChosenTrait for that set.
+
+    console.log("Chosen Trait Sets: " + ChosenTraitSet1 + ", " + ChosenTraitSet2 + ", " + ChosenTraitSet3);
+
+    if (ChosenTraitSet1 === 1) {
+        document.getElementById("physical-trait-1").innerText = ChosenTrait1;
+    } else if (ChosenTraitSet1 === 2) {
+        document.getElementById("physical-trait-1").innerText = ChosenTrait2;
+    } else if (ChosenTraitSet1 === 3) {
+        document.getElementById("physical-trait-1").innerText = ChosenTrait3;
+    } else if (ChosenTraitSet1 === 4) {
+        document.getElementById("physical-trait-1").innerText = ChosenTrait4;
+    } else if (ChosenTraitSet1 === 5) {
+        document.getElementById("physical-trait-1").innerText = ChosenTrait5;
+    }
+
+    if (ChosenTraitSet2 === 1) {
+        document.getElementById("physical-trait-2").innerText = ChosenTrait1;
+    } else if (ChosenTraitSet2 === 2) {
+        document.getElementById("physical-trait-2").innerText = ChosenTrait2;
+    } else if (ChosenTraitSet2 === 3) {
+        document.getElementById("physical-trait-2").innerText = ChosenTrait3;
+    } else if (ChosenTraitSet2 === 4) {
+        document.getElementById("physical-trait-2").innerText = ChosenTrait4;
+    } else if (ChosenTraitSet2 === 5) {
+        document.getElementById("physical-trait-2").innerText = ChosenTrait5;
+    }
+
+    if (ChosenTraitSet3 === 1) {
+        document.getElementById("physical-trait-3").innerText = ChosenTrait1;
+    } else if (ChosenTraitSet3 === 2) {
+        document.getElementById("physical-trait-3").innerText = ChosenTrait2;
+    } else if (ChosenTraitSet3 === 3) {
+        document.getElementById("physical-trait-3").innerText = ChosenTrait3;
+    } else if (ChosenTraitSet3 === 4) {
+        document.getElementById("physical-trait-3").innerText = ChosenTrait4;
+    } else if (ChosenTraitSet3 === 5) {
+        document.getElementById("physical-trait-3").innerText = ChosenTrait5;
+    }
+
 }
