@@ -59,9 +59,32 @@ h1 {
 }
 
 .character-maker {
+    position: relative;
     display: flex;
     flex-direction: column;
     width: fit-content;
+}
+
+#already-copied-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    background-color: #F5E9DA;
+    color: #F4402D;
+    width: 150px;
+    height: 35px;
+    padding: 1px;
+    font-weight: 700;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: solid 3px #F4402D;
+    border-radius: 5px;
+    user-select: none;
+    cursor: default;
+    visibility: hidden;
 }
 
 .character-area {
@@ -152,7 +175,7 @@ footer {
 
 /*desktop query*/
 @media only screen and (min-width: 992px) {
-    
+
     .profile-pic {
         width: 3.75em;
         height: 3.75em;

@@ -1,15 +1,22 @@
 'use strict';
 
 const copiedSection = document.getElementById("copied-characters");
+const copiedSectionColor = ["#CA5346","#A05A52", "#F4402D", "#CA5346","#A05A52", "#F4402D", "#CA5346","#A05A52", "#F4402D"];
 let NumberOfCopies = 0;
 let copiedData = [];
 
+// When someone tries to copy a trait box that has already been copied, a message pops up. This function re-hides that popup message.
+function copyMessageRemove() {
+    document.getElementById("already-copied-message").style.visibility = "hidden";
+}
+
 function copier() {
+    copyMessageRemove();
     NumberOfCopies++;
 
     let newCharacterArea = document.createElement("div");
     newCharacterArea.setAttribute("class", "character-area");
-    newCharacterArea.style.color = 'pink';
+    newCharacterArea.style.color = copiedSectionColor[(NumberOfCopies+ 1)];
 
     let newHeading = document.createElement("h2");
     newHeading.setAttribute("class", "traits-heading");
@@ -70,7 +77,9 @@ function copier() {
 
     if (JSON.stringify(copiedDataNew) === JSON.stringify(copiedData)) {
         console.log("failed attempt to copy duplicate");
-        alert("already copied this trait box");
+        NumberOfCopies--; // since we're not using this copy after all, decrease it by one.
+        setTimeout(copyMessageRemove, 1000);
+        document.getElementById("already-copied-message").style.visibility = "visible";
         return // If the newly copied data is simply an exact copy of the previously copied data, just exist the function without creating a new duplicate box.
     } else {
         console.log("will now make copy");
