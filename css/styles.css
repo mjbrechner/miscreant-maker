@@ -90,9 +90,10 @@ h1 {
 .character-area {
     text-align: center;
     align-items: center;
-    width: 275px;
+    width: 300px;
     height: 135px;
     padding: 5px 10px 5px 10px;
+    margin: 5px;
     border: solid 3px;
     border-radius: 5px;
 }
@@ -103,7 +104,7 @@ h1 {
 }
 
 .trait {
-    width: 100px;
+    width: 125px;
 }
 
 h2,
