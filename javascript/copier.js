@@ -49,7 +49,7 @@ function copier() {
     // personality copier end
 
     // physical copier start
-    let newCharacterAreaPhysical = document.createElement("div");
+let newCharacterAreaPhysical = document.createElement("div");
     newCharacterAreaPhysical.setAttribute("class", "character-section");
     newCharacterAreaPhysical.setAttribute("class", "physical-section");
 
@@ -71,7 +71,7 @@ function copier() {
     newCharacterAreaPhysicalListElement3.textContent = document.getElementById("physical-trait-3").innerText;
     // physical copier end
 
-    let copiedDataNew = [document.getElementById("personality-trait-1").innerText, document.getElementById("personality-trait-2").innerText, document.getElementById("personality-trait-3").innerText, newCharacterAreaPhysicalListElement1.textContent = document.getElementById("physical-trait-1").innerText, newCharacterAreaPhysicalListElement1.textContent = document.getElementById("physical-trait-2").innerText, newCharacterAreaPhysicalListElement1.textContent = document.getElementById("physical-trait-3").innerText];
+    let copiedDataNew = [document.getElementById("personality-trait-1").innerText, document.getElementById("personality-trait-2").innerText, document.getElementById("personality-trait-3").innerText, document.getElementById("physical-trait-1").innerText, document.getElementById("physical-trait-2").innerText, document.getElementById("physical-trait-3").innerText];
     console.log("copiedData: " + copiedData);
     console.log("copiedDataNew: " + copiedDataNew);
 
