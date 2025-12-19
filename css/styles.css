@@ -52,6 +52,8 @@ footer {
     display: flex;
     flex-direction: row-reverse;
     gap: 1em;
+    align-items: center;
+    justify-content: center;
 }
 
 h1 {
@@ -62,6 +64,10 @@ h1 {
     margin: 0;
     text-decoration: underline 3px;
     text-underline-offset: 10px;
+}
+
+.info-box {
+    width: 350px;
 }
 
 .character-maker {
@@ -169,12 +175,6 @@ footer {
     font-family: sans-serif;
 }
 
-
-.profile-pic {
-    width: 3em;
-    height: 3em;
-}
-
 /*tablet query*/
 @media only screen and (min-width: 768px) {
 
@@ -183,17 +183,13 @@ footer {
         font-size: 16px;
     }
 
-    .profile-pic {
-        width: 3.5em;
-        height: 3.5em;
-    }
 }
 
 /*desktop query*/
 @media only screen and (min-width: 992px) {
 
-    .profile-pic {
-        width: 3.75em;
-        height: 3.75em;
+    .info-box {
+        width: 500px;
     }
+
 }
