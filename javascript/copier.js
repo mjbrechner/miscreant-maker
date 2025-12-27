@@ -1,7 +1,7 @@
 'use strict';
 
 const copiedSection = document.getElementById("copied-characters");
-const copiedSectionColor = ["#CA5346","#A05A52", "#F4402D", "#CA5346","#A05A52", "#F4402D", "#CA5346","#A05A52", "#F4402D"];
+// const copiedSectionColor = ["#CA5346","#A05A52", "#F4402D", "#CA5346","#A05A52", "#F4402D", "#CA5346","#A05A52", "#F4402D"];
 let NumberOfCopies = 0;
 let copiedData = [];
 
@@ -16,7 +16,8 @@ function copier() {
 
     let newCharacterArea = document.createElement("div");
     newCharacterArea.setAttribute("class", "character-area");
-    newCharacterArea.style.color = copiedSectionColor[(NumberOfCopies+ 1)];
+    // newCharacterArea.style.color = copiedSectionColor[(NumberOfCopies+ 1)];
+    newCharacterArea.style.color = "#CA5346";
 
     let newHeading = document.createElement("h2");
     newHeading.setAttribute("class", "traits-heading");
@@ -49,7 +50,7 @@ function copier() {
     // personality copier end
 
     // physical copier start
-let newCharacterAreaPhysical = document.createElement("div");
+    let newCharacterAreaPhysical = document.createElement("div");
     newCharacterAreaPhysical.setAttribute("class", "character-section");
     newCharacterAreaPhysical.setAttribute("class", "physical-section");
 

@@ -30,7 +30,6 @@ From Google Fonts:
 
 * {
     background-color: #332928;
-    color: #F4402D;
     color: #F5E9DA;
 }
 
@@ -56,6 +55,20 @@ footer {
     justify-content: center;
 }
 
+@keyframes colorAnimation {
+    0% {
+        color: #F5E9DA;
+    }
+
+    50% {
+        color: #F4402D;
+    }
+
+    100% {
+        color: #F5E9DA;
+    }
+}
+
 h1 {
     font-size: 90px;
     font-weight: normal;
@@ -64,6 +77,9 @@ h1 {
     margin: 0;
     text-decoration: underline 3px;
     text-underline-offset: 10px;
+    animation-name: colorAnimation;
+    animation-delay: 3s;
+    animation-duration: 120s;
 }
 
 .info-box {
