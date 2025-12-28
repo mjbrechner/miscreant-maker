@@ -51,7 +51,7 @@ footer {
     display: flex;
     flex-direction: row-reverse;
     gap: 1em;
-    align-items: center;
+    align-items: top;
     justify-content: center;
 }
 
@@ -70,7 +70,7 @@ footer {
 }
 
 h1 {
-    font-size: 90px;
+    font-size: 50px;
     font-weight: normal;
     text-align: center;
     padding: 5px;
@@ -84,6 +84,7 @@ h1 {
 
 .info-box {
     width: 350px;
+    font-size: 15px;
 }
 
 .character-maker {
@@ -194,6 +195,14 @@ footer {
 /*tablet query*/
 @media only screen and (min-width: 768px) {
 
+    h1 {
+        font-size: 70px;
+    }
+
+    .info-box {
+        font-size: 17px;
+    }
+
     footer {
         margin-top: 1.25em;
         font-size: 16px;
@@ -204,8 +213,13 @@ footer {
 /*desktop query*/
 @media only screen and (min-width: 992px) {
 
+    h1 {
+        font-size: 90px;
+    }
+
     .info-box {
         width: 500px;
+        font-size: 20px;
     }
 
 }
