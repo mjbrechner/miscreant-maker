@@ -17,10 +17,10 @@ function copier() {
     let newCharacterArea = document.createElement("div");
     newCharacterArea.setAttribute("class", "character-area");
     // newCharacterArea.style.color = copiedSectionColor[(NumberOfCopies+ 1)];
-    newCharacterArea.style.color = "#CA5346";
+    newCharacterArea.style.color = "#F4402D";
 
     let newHeading = document.createElement("h2");
-    newHeading.setAttribute("class", "traits-heading");
+    newHeading.setAttribute("class", "traits-heading created-element");
     newHeading.textContent = `Character #${NumberOfCopies}`;
 
     let newCharacterAreaDetail = document.createElement("div");
@@ -32,20 +32,22 @@ function copier() {
     newCharacterAreaPersonality.setAttribute("class", "personality-section");
 
     let newCharacterAreaDetailPersonalityHeading = document.createElement("h3");
+    newCharacterAreaDetailPersonalityHeading.setAttribute("class", "created-element");
     newCharacterAreaDetailPersonalityHeading.textContent = "personality";
 
     let newCharacterAreaPersonalityList = document.createElement("ul");
 
     let newCharacterAreaPersonalityListElement1 = document.createElement("li");
-    newCharacterAreaPersonalityListElement1.setAttribute("class", "trait");
+    newCharacterAreaPersonalityListElement1.setAttribute("class", "trait created-element");
     newCharacterAreaPersonalityListElement1.textContent = document.getElementById("personality-trait-1").innerText;
 
     let newCharacterAreaPersonalityListElement2 = document.createElement("li");
-    newCharacterAreaPersonalityListElement2.setAttribute("class", "trait");
+    newCharacterAreaPersonalityListElement2.setAttribute("class", "trait created-element");
     newCharacterAreaPersonalityListElement2.textContent = document.getElementById("personality-trait-2").innerText;
 
+
     let newCharacterAreaPersonalityListElement3 = document.createElement("li");
-    newCharacterAreaPersonalityListElement3.setAttribute("class", "trait");
+    newCharacterAreaPersonalityListElement3.setAttribute("class", "trait created-element");
     newCharacterAreaPersonalityListElement3.textContent = document.getElementById("personality-trait-3").innerText;
     // personality copier end
 
@@ -55,20 +57,21 @@ function copier() {
     newCharacterAreaPhysical.setAttribute("class", "physical-section");
 
     let newCharacterAreaDetailPhysicalHeading = document.createElement("h3");
+    newCharacterAreaDetailPhysicalHeading.setAttribute("class", "created-element");
     newCharacterAreaDetailPhysicalHeading.textContent = "physical";
 
     let newCharacterAreaPhysicalList = document.createElement("ul");
 
     let newCharacterAreaPhysicalListElement1 = document.createElement("li");
-    newCharacterAreaPhysicalListElement1.setAttribute("class", "trait");
+    newCharacterAreaPhysicalListElement1.setAttribute("class", "trait created-element");
     newCharacterAreaPhysicalListElement1.textContent = document.getElementById("physical-trait-1").innerText;
 
     let newCharacterAreaPhysicalListElement2 = document.createElement("li");
-    newCharacterAreaPhysicalListElement2.setAttribute("class", "trait");
+    newCharacterAreaPhysicalListElement2.setAttribute("class", "trait created-element");
     newCharacterAreaPhysicalListElement2.textContent = document.getElementById("physical-trait-2").innerText;
 
     let newCharacterAreaPhysicalListElement3 = document.createElement("li");
-    newCharacterAreaPhysicalListElement3.setAttribute("class", "trait");
+    newCharacterAreaPhysicalListElement3.setAttribute("class", "trait created-element");
     newCharacterAreaPhysicalListElement3.textContent = document.getElementById("physical-trait-3").innerText;
     // physical copier end
 

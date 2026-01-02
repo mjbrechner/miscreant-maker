@@ -179,6 +179,10 @@ button:active {
     flex-wrap: wrap;
 }
 
+.created-element {
+    color: #F59584;
+}
+
 footer {
     display: flex;
     flex-direction: row;
