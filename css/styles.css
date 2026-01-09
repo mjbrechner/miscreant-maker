@@ -171,6 +171,12 @@ button:active {
     transform: translate(1px);
 }
 
+#copy-button {
+opacity: .5;
+pointer-events: none;
+}
+
+
 #copied-characters {
     display: flex;
     align-items: center;

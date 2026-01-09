@@ -22,6 +22,10 @@ const physicialFullList4 = ['fleet-footed', 'plodding', 'clumsy', 'twinkle-toed'
 const physicialFullList5 = ['slimy', 'crusty', 'sunburned', 'sweaty', 'foul-smelling', 'perfumed', 'unwashed', 'clean'];
 
 function generateTraits() {
+    // The first time traits are actually generated, the Copy Button needs to be enabled, since the user will now have potential text to copy.
+    document.getElementById("copy-button").style.pointerEvents = "auto";
+    document.getElementById("copy-button").style.opacity = "1";
+
 
     let personalityEvil = ['angry', 'malicious', 'boastful', 'loud', 'deceitful', 'sinister', 'brutal', 'soulless', 'cunning', 'traitorous'];
     let personalityNeutral = ['nervous', 'quick-witted', 'comical', 'goofy', 'cheerful', 'eager', 'dutiful', 'thorough', 'flighty'];
