@@ -11,21 +11,9 @@ Browns
 Whites
 #F5E9DA
 
-
-From Google Fonts:
-.jacquard-12-regular {
-  font-family: "Jacquard 12", system-ui;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.pixelify-sans-<uniquifier> {
-  font-family: "Pixelify Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-
+Google Fonts:
+.jacquard-12-regular
+.pixelify-sans-<uniquifier>
 */
 
 * {
@@ -102,13 +90,13 @@ h1 {
     display: flex;
     background-color: #F5E9DA;
     color: #F4402D;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
     width: 150px;
     height: 35px;
     padding: 1px;
     font-weight: 700;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
     border: solid 3px #F4402D;
     border-radius: 5px;
     user-select: none;
@@ -176,7 +164,6 @@ button:active {
     pointer-events: none;
 }
 
-
 #copied-characters {
     display: flex;
     align-items: center;
@@ -237,7 +224,8 @@ footer {
         font-size: 20px;
     }
 
-    footer, .copyright-symbol {
+    footer,
+    .copyright-symbol {
         font-size: 18px;
     }
 

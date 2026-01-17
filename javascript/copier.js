@@ -45,7 +45,6 @@ function copier() {
     newCharacterAreaPersonalityListElement2.setAttribute("class", "trait created-element");
     newCharacterAreaPersonalityListElement2.textContent = document.getElementById("personality-trait-2").innerText;
 
-
     let newCharacterAreaPersonalityListElement3 = document.createElement("li");
     newCharacterAreaPersonalityListElement3.setAttribute("class", "trait created-element");
     newCharacterAreaPersonalityListElement3.textContent = document.getElementById("personality-trait-3").innerText;

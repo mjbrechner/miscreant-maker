@@ -79,9 +79,6 @@ function generateTraits() {
             console.log("PersonalityEvil: " + personalityEvil);
         }
 
-
-
-
         console.log("three new  arrays:");
         console.log("pers good:" + personalityGood);
         console.log("pers neutral:" + personalityNeutral);
@@ -131,7 +128,6 @@ function generateTraits() {
 
     // Now that three unique sets have been chosen from the options for physical traits, now to randomly pick a trait from each set.
 
-
     let ChosenTrait1 = (Math.floor(Math.random() * physical1.length))
     console.log("ChosenTrait1 is now #" + ChosenTrait1 + "from this array: " + physical1);
     ChosenTrait1 = physical1[ChosenTrait1];
@@ -156,7 +152,6 @@ function generateTraits() {
     console.log("ChosenTrait5 is now #" + ChosenTrait5 + "from this array: " + physical5);
     ChosenTrait5 = physical5[ChosenTrait5];
     console.log("ChosenTrait5 is now a value: " + ChosenTrait5);
-
 
     // Now there are three unique SETS and a unique TRAIT for each set. Now to match a ChosenTraitSet to the ChosenTrait for that set.
 

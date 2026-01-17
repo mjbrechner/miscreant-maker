@@ -2,4 +2,6 @@ Miscreant Maker by M.J. Brechner
 
 This is a tool to generate a bit of personality to villanous NPCs in role-playing games. Rather than have your players fight against a group of generic baddies, this will help give each villain some character.
 
+Viewable at: https://mjbrechner.github.io/miscreant-maker/
+
 © 2025 M.J. Brechner
