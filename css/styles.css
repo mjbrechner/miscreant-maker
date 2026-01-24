@@ -176,6 +176,20 @@ button:active {
     color: #F59584;
 }
 
+.x-out {
+    position: absolute;
+    top: 2.5%;
+    left: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10px;
+    height: 10px;
+    border: solid 1px;
+    line-height: 1;
+    cursor: pointer;
+}
+
 footer {
     display: flex;
     flex-direction: row;

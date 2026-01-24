@@ -18,6 +18,7 @@ function copier() {
     newCharacterArea.setAttribute("class", "character-area");
     // newCharacterArea.style.color = copiedSectionColor[(NumberOfCopies+ 1)];
     newCharacterArea.style.color = "#F4402D";
+    newCharacterArea.style.position = "relative";
 
     let newHeading = document.createElement("h2");
     newHeading.setAttribute("class", "traits-heading created-element");
@@ -25,6 +26,13 @@ function copier() {
 
     let newCharacterAreaDetail = document.createElement("div");
     newCharacterAreaDetail.setAttribute("class", "character-area-detail");
+
+    // x-out button start
+    let xOut = document.createElement("div");
+    xOut.setAttribute("class", "x-out created-element");
+    xOut.innerText = "×";
+    xOut.addEventListener("click", function() {newCharacterArea.remove();});
+    //x-out button end
 
     // personality copier start
     let newCharacterAreaPersonality = document.createElement("div");
@@ -91,6 +99,7 @@ function copier() {
 
     //build the copy
     copiedSection.appendChild(newCharacterArea);
+    newCharacterArea.appendChild(xOut);
     newCharacterArea.appendChild(newHeading);
     newCharacterArea.appendChild(newCharacterAreaDetail);
     newCharacterAreaDetail.appendChild(newCharacterAreaPersonality);
@@ -106,4 +115,9 @@ function copier() {
     newCharacterAreaPhysicalList.appendChild(newCharacterAreaPhysicalListElement1);
     newCharacterAreaPhysicalList.appendChild(newCharacterAreaPhysicalListElement2);
     newCharacterAreaPhysicalList.appendChild(newCharacterAreaPhysicalListElement3);
+
+
+    function deleteItem() {
+        document.getElementById(`newCharacterArea`).remove();
+    }
 }
