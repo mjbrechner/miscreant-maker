@@ -12,13 +12,13 @@ let indexToDelete;
 // with a smaller chance of a neutral trait appearing and much smaller - but still possible - chance of a good trait being applied.
 
 const personalityEvilFullList = ['angry', 'malicious', 'boastful', 'loud', 'deceitful', 'sinister', 'brutal', 'soulless', 'cunning', 'traitorous', 'quick-tempered'];
-const personalityNeutralFullList = ['nervous', 'quick-witted', 'comical', 'goofy', 'cheerful', 'eager', 'dutiful', 'thorough', 'flighty', 'muttering'];
-const personalityGoodFullList = ['friendly', 'empathetic', 'conscientious', 'merciful', 'supportive', 'fair-minded'];
+const personalityNeutralFullList = ['nervous', 'quick-witted', 'comical', 'goofy', 'cheerful', 'eager', 'dutiful', 'thorough', 'flighty', 'muttering', 'sniffling', 'lazy'];
+const personalityGoodFullList = ['friendly', 'empathetic', 'conscientious', 'merciful', 'supportive', 'fair-minded', 'honest'];
 
-const physicialFullList1 = ['gigantic', 'tall', 'medium', 'short', 'tiny'];
-const physicialFullList2 = ['brawny', 'wiry', 'scrawny', 'plump', 'medium', 'heavy', 'delicate'];
+const physicialFullList1 = ['gigantic', 'tall', 'average height', 'short', 'tiny'];
+const physicialFullList2 = ['brawny', 'wiry', 'scrawny', 'plump', 'medium build', 'heavy', 'delicate'];
 const physicialFullList3 = ['wide-eyed', 'wild-eyed', 'squinty', 'sleepy-eyed', 'blinky', 'red-eyed'];
-const physicialFullList4 = ['fleet-footed', 'plodding', 'clumsy', 'twinkle-toed', 'jumpy', 'sure-footed'];
+const physicialFullList4 = ['fleet-footed', 'plodding', 'clumsy', 'twinkle-toed', 'jumpy', 'sure-footed', 'graceful'];
 const physicialFullList5 = ['slimy', 'crusty', 'sunburned', 'sweaty', 'foul-smelling', 'perfumed', 'unwashed', 'clean'];
 
 function generateTraits() {
@@ -27,9 +27,9 @@ function generateTraits() {
     document.getElementById("copy-button").style.opacity = "1";
 
 
-    let personalityEvil = ['angry', 'malicious', 'boastful', 'loud', 'deceitful', 'sinister', 'brutal', 'soulless', 'cunning', 'traitorous'];
-    let personalityNeutral = ['nervous', 'quick-witted', 'comical', 'goofy', 'cheerful', 'eager', 'dutiful', 'thorough', 'flighty'];
-    let personalityGood = ['friendly', 'empathetic', 'conscientious', 'merciful', 'supportive'];
+    let personalityEvil = ['angry', 'malicious', 'boastful', 'loud', 'deceitful', 'sinister', 'brutal', 'soulless', 'cunning', 'traitorous', 'quick-tempered'];
+    let personalityNeutral = ['nervous', 'quick-witted', 'comical', 'goofy', 'cheerful', 'eager', 'dutiful', 'thorough', 'flighty', 'muttering', 'sniffling', 'lazy'];
+    let personalityGood = ['friendly', 'empathetic', 'conscientious', 'merciful', 'supportive', 'fair-minded', 'honest'];
 
     for (let i = 0; i <= 2; i++) {
         console.log("i= " + i);
@@ -98,10 +98,10 @@ function generateTraits() {
     // The plan is to generate three unique traits at a time, though there are more than three sets of traits from which to draw.
     // Therefore, the first step is to randomly choose three different sets of physical traits, and from there randomly pick a trait from each set.
 
-    let physical1 = ['gigantic', 'tall', 'medium', 'short', 'tiny'];
-    let physical2 = ['brawny', 'wiry', 'scrawny', 'plump', 'medium', 'heavy', 'delicate'];
+    let physical1 = ['gigantic', 'tall', 'average height', 'short', 'tiny'];
+    let physical2 = ['brawny', 'wiry', 'scrawny', 'plump', 'medium build', 'heavy', 'delicate'];
     let physical3 = ['wide-eyed', 'wild-eyed', 'squinty', 'sleepy-eyed', 'blinky', 'red-eyed'];
-    let physical4 = ['fleet-footed', 'plodding', 'clumsy', 'twinkle-toed', 'jumpy', 'sure-footed'];
+    let physical4 = ['fleet-footed', 'plodding', 'clumsy', 'twinkle-toed', 'jumpy', 'sure-footed', 'graceful'];
     let physical5 = ['slimy', 'crusty', 'sunburned', 'sweaty', 'foul-smelling', 'perfumed', 'unwashed', 'clean'];
 
     // Randomly pick three sets of physical traits.

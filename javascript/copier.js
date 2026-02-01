@@ -22,7 +22,7 @@ function copier() {
 
     let newHeading = document.createElement("h2");
     newHeading.setAttribute("class", "traits-heading created-element");
-    newHeading.textContent = `Character #${NumberOfCopies}`;
+    newHeading.textContent = `Miscreant #${NumberOfCopies}`;
 
     let newCharacterAreaDetail = document.createElement("div");
     newCharacterAreaDetail.setAttribute("class", "character-area-detail");
