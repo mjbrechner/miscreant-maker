@@ -8,6 +8,8 @@ let copiedData = [];
 // When someone tries to copy a trait box that has already been copied, a message pops up. This function re-hides that popup message.
 function copyMessageRemove() {
     document.getElementById("already-copied-message").style.visibility = "hidden";
+    document.getElementById("copy-button").style.pointerEvents = "auto";
+    document.getElementById("copy-button").style.opacity = "1";
 }
 
 function copier() {
@@ -89,8 +91,11 @@ function copier() {
     if (JSON.stringify(copiedDataNew) === JSON.stringify(copiedData)) {
         console.log("failed attempt to copy duplicate");
         NumberOfCopies--; // since we're not using this copy after all, decrease it by one.
-        setTimeout(copyMessageRemove, 1000);
+        setTimeout(copyMessageRemove, 5000);
         document.getElementById("already-copied-message").style.visibility = "visible";
+        // The following prevents someone from just repeatedly clicking the button after it has been shown that the data has already been copied.
+        document.getElementById("copy-button").style.pointerEvents = "none";
+        document.getElementById("copy-button").style.opacity = ".5"; 
         return // If the newly copied data is simply an exact copy of the previously copied data, just exist the function without creating a new duplicate box.
     } else {
         console.log("will now make copy");

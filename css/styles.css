@@ -84,7 +84,7 @@ h1 {
 
 #already-copied-message {
     position: absolute;
-    top: 50%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -95,7 +95,7 @@ h1 {
     justify-content: center;
     width: 150px;
     height: 35px;
-    padding: 1px;
+    padding: 5px;
     font-weight: 700;
     border: solid 3px #F4402D;
     border-radius: 5px;
