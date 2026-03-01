@@ -289,13 +289,14 @@ footer {
 
     .x-out {
         top: 1.3%;
-        left: 95%;
+        left: 95.5%;
         width: 10px;
         height: 10px;
         border: solid 2px;
         border-radius: 3px;
         text-indent: -1px;
         line-height: 1.3;
+        text-indent: -.1ch;
     }
 
     footer,
