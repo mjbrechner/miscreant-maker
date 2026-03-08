@@ -22,7 +22,7 @@ Google Fonts:
 }
 
 header {
-    font-family: "Jacquard 12", system-ui;
+    font-family: "Jacquard 24", system-ui;
     font-weight: 400;
     font-style: normal;
 }
@@ -125,6 +125,14 @@ h1 {
 .character-area2 {
     width: 300px;
     height: 135px;
+}
+
+.character-area2>h2 {
+    font-family: "Jacquard 12", system-ui;
+    font-size: 1.75em;
+    font-style: normal;
+    font-weight: 400;
+
 }
 
 .character-area-detail {
@@ -239,7 +247,7 @@ footer {
     }
 
     .info-box {
-        font-size: 17px;
+        font-size: 19px;
     }
 
     .character-area {
@@ -277,7 +285,7 @@ footer {
 
     .info-box {
         width: 500px;
-        font-size: 25px;
+        font-size: 22px;
     }
 
     .character-area,
