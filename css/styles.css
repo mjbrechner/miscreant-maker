@@ -180,10 +180,12 @@ ul {
 button {
     width: 100px;
     height: 30px;
-    margin: 10px;
+    margin: 2px;
     border: solid 3px #F5E9DA;
     border-radius: 5px;
     box-shadow: 2px 2px #4B403F;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 15px;
     cursor: pointer;
 }
 
@@ -265,6 +267,13 @@ footer {
         width: 125px;
     }
 
+    button {
+        width: 110px;
+        height: 40px;
+        font-size: 19px;
+        margin: 3px;
+    }
+
     footer {
         margin-top: 1.25em;
         font-size: 15px;
@@ -277,7 +286,8 @@ footer {
 }
 
 /*desktop query*/
-@media only screen and (min-width: 1114px) { /* Usually, I would set this at 992x, but 1099px fits better with the re-sizing of the character-area div sections. */
+@media only screen and (min-width: 1114px) {
+    /* Usually, I would set this at 992x, but 1099px fits better with the re-sizing of the character-area div sections. */
 
     h1 {
         font-size: 90px;
@@ -293,6 +303,13 @@ footer {
         width: 325px;
         height: 175px;
         font-size: 1.2em;
+    }
+
+    button {
+        width: 125px;
+        height: 45px;
+        font-size: 22px;
+        margin: 5px;
     }
 
     .x-out {
