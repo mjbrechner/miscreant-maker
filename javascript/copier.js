@@ -33,7 +33,9 @@ function copier() {
     let xOut = document.createElement("div");
     xOut.setAttribute("class", "x-out created-element");
     xOut.innerText = "×";
-    xOut.addEventListener("click", function() {newCharacterArea.remove();});
+    xOut.addEventListener("click", function () {
+        newCharacterArea.remove();
+    });
     //x-out button end
 
     // personality copier start
@@ -95,7 +97,7 @@ function copier() {
         document.getElementById("already-copied-message").style.visibility = "visible";
         // The following prevents someone from just repeatedly clicking the button after it has been shown that the data has already been copied.
         document.getElementById("copy-button").style.pointerEvents = "none";
-        document.getElementById("copy-button").style.opacity = ".5"; 
+        document.getElementById("copy-button").style.opacity = ".5";
         return // If the newly copied data is simply an exact copy of the previously copied data, just exist the function without creating a new duplicate box.
     } else {
         console.log("will now make copy");
@@ -121,6 +123,13 @@ function copier() {
     newCharacterAreaPhysicalList.appendChild(newCharacterAreaPhysicalListElement2);
     newCharacterAreaPhysicalList.appendChild(newCharacterAreaPhysicalListElement3);
 
+document.getElementById("character-area").animate([ // A successful copy triggers a splash of animation.
+{color: "#F5E9DA"},
+{color: "#F4402D"},
+{color: "#F5E9DA"}
+], {
+    duration: 500,
+});
 
     function deleteItem() {
         document.getElementById(`newCharacterArea`).remove();
