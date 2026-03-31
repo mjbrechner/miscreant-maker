@@ -172,6 +172,10 @@ ul {
     margin: 0;
 }
 
+li::marker {
+    color: #F5E9DA;
+}
+
 .button-area {
     display: flex;
     justify-content: space-evenly;

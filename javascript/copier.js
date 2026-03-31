@@ -123,15 +123,9 @@ function copier() {
     newCharacterAreaPhysicalList.appendChild(newCharacterAreaPhysicalListElement2);
     newCharacterAreaPhysicalList.appendChild(newCharacterAreaPhysicalListElement3);
 
-document.getElementById("character-area").animate([ // A successful copy triggers a splash of animation.
-{color: "#F5E9DA"},
-{color: "#F4402D"},
-{color: "#F5E9DA"}
-], {
-    duration: 500,
-});
-
     function deleteItem() {
         document.getElementById(`newCharacterArea`).remove();
     }
+
+    document.getElementById("character-area").animate(animationColors, animationOptions); // Add a splash of color
 }

@@ -11,15 +11,27 @@ let indexToDelete;
 // This doesn't mean that all these traits have an equal chance of being selected; evil options will predominate,
 // with a smaller chance of a neutral trait appearing and much smaller - but still possible - chance of a good trait being applied.
 
-const personalityEvilFullList = ['angry', 'malicious', 'boastful', 'loud', 'deceitful', 'sinister', 'brutal', 'soulless', 'cunning', 'traitorous', 'quick-tempered'];
-const personalityNeutralFullList = ['nervous', 'quick-witted', 'comical', 'goofy', 'cheerful', 'eager', 'dutiful', 'thorough', 'flighty', 'muttering', 'sniffling', 'lazy'];
-const personalityGoodFullList = ['friendly', 'empathetic', 'conscientious', 'merciful', 'supportive', 'fair-minded', 'honest'];
+const personalityEvilFullList = ['angry', 'malicious', 'boastful', 'loud', 'deceitful', 'sinister', 'brutal', 'soulless', 'cunning', 'traitorous', 'quick-tempered', 'vicious'];
+const personalityNeutralFullList = ['nervous', 'quick-witted', 'comical', 'goofy', 'cheerful', 'eager', 'dutiful', 'thorough', 'flighty', 'muttering', 'sniffling', 'lazy', 'flaky'];
+const personalityGoodFullList = ['friendly', 'empathetic', 'conscientious', 'merciful', 'supportive', 'fair-minded', 'honest', 'loyal'];
 
 const physicialFullList1 = ['gigantic', 'tall', 'average height', 'short', 'tiny'];
 const physicialFullList2 = ['brawny', 'wiry', 'scrawny', 'plump', 'medium build', 'heavy', 'delicate'];
-const physicialFullList3 = ['wide-eyed', 'wild-eyed', 'squinty', 'sleepy-eyed', 'blinky', 'red-eyed'];
+const physicialFullList3 = ['wide-eyed', 'wild-eyed', 'squinty', 'sleepy-eyed', 'blinky', 'red-eyed', 'bespectacled'];
 const physicialFullList4 = ['fleet-footed', 'plodding', 'clumsy', 'twinkle-toed', 'jumpy', 'sure-footed', 'graceful'];
 const physicialFullList5 = ['slimy', 'crusty', 'sunburned', 'sweaty', 'foul-smelling', 'perfumed', 'unwashed', 'clean'];
+
+
+// The following variables are used to animate some elements with color.
+const animationColors = [
+{color: "#F5E9DA"},
+{color: "#F4402D"},
+{color: "#F5E9DA"}
+];
+
+const animationOptions = {
+    duration: 500,
+};
 
 function generateTraits() {
     // The first time traits are actually generated, the Copy Button needs to be enabled, since the user will now have potential text to copy.
@@ -192,5 +204,14 @@ function generateTraits() {
     } else if (ChosenTraitSet3 === 5) {
         document.getElementById("physical-trait-3").innerText = ChosenTrait5;
     }
+
+
+document.getElementById("character-area").animate(animationColors, animationOptions); // Add a splash of color
+document.getElementById("personality-trait-1").animate(animationColors, animationOptions);
+document.getElementById("personality-trait-2").animate(animationColors, animationOptions);
+document.getElementById("personality-trait-3").animate(animationColors, animationOptions);
+document.getElementById("physical-trait-1").animate(animationColors, animationOptions);
+document.getElementById("physical-trait-2").animate(animationColors, animationOptions);
+document.getElementById("physical-trait-3").animate(animationColors, animationOptions);
 
 }
